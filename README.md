@@ -18,7 +18,7 @@
 
 - It does not creates static html files.
 
-- It keeps the website simple & lighweight.
+- It keeps the website simple & lightweight.
 
 - It enables smart full-text search plugin.
 
@@ -43,16 +43,27 @@ https://security-list.js.org/#/
 > Command: cat /etc/os-release
 
 PRETTY_NAME="Ubuntu 22.04.3 LTS"
+
 NAME="Ubuntu"
+
 VERSION_ID="22.04"
+
 VERSION="22.04.3 LTS (Jammy Jellyfish)"
+
 VERSION_CODENAME=jammy
+
 ID=ubuntu
+
 ID_LIKE=debian
+
 HOME_URL="https://www.ubuntu.com/"
+
 SUPPORT_URL="https://help.ubuntu.com/"
+
 BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+
 PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+
 UBUNTU_CODENAME=jammy
 
 
@@ -68,27 +79,40 @@ Node.js & NPM (Node Package Manager)
 
 ### Node.js
 
-1. Node.js helps the docsify in making content available on the server side.
-   In case the website is hosted on a remote server and being searched( by a user ) using Google search engine via website's domain name, provided the website is built using docsify, the node.js helps in making the content of the website available on the Google web server side smoothly.
+1. Node.js helps the docsify in making content available on the server side. In case the website is hosted on a remote server and being searched( by a user ) using Google search engine via website's domain name, provided the website is built using docsify, the node.js helps in making the content of the website available on the Google web server side smoothly.
+
 2. Node.js also helps the docsify in running local development server. This local server allows the user to preview and develop the document locally on his computer before deploying it to the production environment.
+
 3. Node.js ensures the cross-platform compatibility of the projects developed using docsify. This means that the website developed using docsify on one platform ( operating system ) can be easily shared and run on different platforms.
+
 4. Node.js supports the use of plugins in the docsify.
+
 5. Docsify take the help of node.js during the build and compilation process.
+
    Major points included in the build & compilation process are mentioned below.
+
    a. Conversion of Markdown files into HTML to deliver the content as a webpage.
+
    b. Navigation & Sidebar generation for structuring the documentation layout.
-   c. Achor tags & header links to facilitate easy navigation within the document.
+
+   c. Anchor tags & header links to facilitate easy navigation within the document.
+
    d. Injection of scripts for dynamic behaviour of the website such as live reloading, search functionality & smooth scrolling.
    To inject scripts user has to mention the script within the script tags in the HTML file.
    Once the script gets mentioned the docsify makes the website interactive and dynamic.
+
    e. Local server setup to preview the webpage during the development phase.
+
    f. After completion of the build process, the compiled content is ready for deployment on the web servers or hosting platform.
 
 ### Node Package Manager
 
 1. Docsify is one of the libraries of JS. It may have dependencies on other JS libraries or tools. NPM helps the docsify user to install and manage those required dependencies. So it helps in dependency management.
+
 2. NPM allows the user to specify the version of docsify and its dependencies on a file named 'package.json'. This file is available in the project made by the user. NPM ensures that everyone working on the same project uses the same version, reducing compatibility issues.
+
 3. NPM helps in script execution which is used to automate various tasks related to the project, such as starting the local development server, building the documentation & deploying the website.
+
 4. NPM also helps in initializing a new project made using docsify.
 
 
@@ -135,17 +159,17 @@ This command will create a package.json file into the newly made directory. It i
 
 - Command: sudo npm install -g docsify-cli
 
-This command will allow the user to install docsify-cli with the help of npm globally on the entire system of the user.
+This command will allow the user to install docsify-cli, with the help of npm, globally on the entire system of the user.
+
 Now since the docsify-cli is globally installed, the user can create his website with the below mentioned steps.
 
 **Step7** 
 
 - Command: docsify init Project1
 
-This command will create and initialize a new directrory with name Project1 inside the current directory Projects. As soon as the directory Project1 is created, two other files will also get created inside it named index.html & README.md.
-The first one is the html file for the Project1(a webpage) created using docsify and the second one is the Markdown file in which user writes the content to be diplayed on the webpage.
+This command will create and initialize a new directrory with name Project1 inside the current directory Projects. As soon as the directory Project1 is created, two other files will also get created inside it named index.html & README.md. The first one is the html file for the Project1(a webpage) created using docsify and the second one is the Markdown file in which user writes the content to be diplayed on the webpage.
 
-Once the user has entered this command. There will be a message saying ' Initialization Succeeded! '  Please run docsify serve Project1 
+Once the user has entered this command. There will be a message saying 'Initialization Succeeded!'  Please run docsify serve Project1 
 
 **Step8**
 
@@ -154,15 +178,18 @@ Once the user has entered this command. There will be a message saying ' Initial
 This command will start a local server and the user can access his docsify documentation in his web browser by visiting the url mentioned i.e. http://localhost:3000 
 
 To stop serving use ctrl + z
+
 There will be a message indicating 'Stopped   docsify serve Project1'
 
 To restart serving use command: fg 
 (fg stands for foreground)
+
 There will be a message indicating 'docsify serve Project1'
 
 #### Note
 
 If the user has stopped the local server and closed the terminal and want to edit the content of the Markdown file and run it again on the web browser then he does not need to initialize the Project1 again.
+
 Without initializing he can directly go to the Project1 directory and run the command: 
 
 docsify serve .
@@ -175,7 +202,7 @@ Once the user runs this command, the content of the Markdown file in the current
 
 ### Configuration options in docsify
 
-> Docsify provides a range of configurations options so that the user can customize the behavior and appearance of his webpage.
+> Docsify provides a range of configuration options so that the user can customize the behavior and appearance of his webpage.
 > Some of these configuration options are explain below:
 
 **Main Configuration**
@@ -282,7 +309,6 @@ window.$docsify = {
 ### Plugins & Extensions
 
 > Docsify supports a variety of plugins & extensions to enhance its functionality. These plugins & extensions allow the user to customize the features of his documentation site.
->
 > To use a plugin the user has to include its script in the 'index.html' file.
 
 > Some common plugins & extensions available with docsify are mentioned below:
@@ -321,7 +347,7 @@ window.$docsify = {
 
 
 
-### Integration & Deployment of Docsify with GitHub
+### Integration of Docsify with GitHub
 
 A user can easily integrate Docsify with GitHub by using GitHub Pages.
 GitHub Pages is designed to host project pages from GitHub repository.
@@ -336,3 +362,4 @@ GitHub Pages is designed to host project pages from GitHub repository.
 8. Now again go to the repository of the project & upload the file (markdown) using 'add file' and click on 'commit changes'. 
 9. Again go to the settings under repository and click pages then click on 'visit site'.
 10. Now the website made using docsify is visible.
+
